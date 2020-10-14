@@ -30,42 +30,14 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        KC_KP_7, KC_KP_8, KC_KP_9, KC_KP_MINUS, \
-        KC_KP_4, KC_KP_5, KC_KP_6, KC_KP_PLUS, \
-        KC_KP_1, KC_KP_2, KC_KP_3, KC_KP_ENTER, \
-        KC_KP_0,          KC_KP_DOT, \
-        MO(_FN), KC_COPY, KC_UP, KC_PASTE, \
-                 KC_LEFT, KC_DOWN, KC_RIGHT \
+        C(KC_PLUS), KC_LBRC, KC_RBRC, KC_B, \
+        C(KC_MINS), C(KC_D), KC_L, KC_E, \
+        LT(1, KC_UNDO), LALT_T(KC_AGAIN), KC_SPC
     ),
 
     [_FN] = LAYOUT(
-        _______, _______, _______, KC_BSPC, \
-        _______, _______, _______, _______, \
-        _______, _______, _______, KC_TAB, \
-        KC_SPC,           _______, \
-        _______, KC_CUT, KC_PGUP, KC_H, \
-                 KC_HOME, KC_PGDOWN, KC_END \
+        _______, A(KC_0), A(KC_1), A(KC_3), \
+        _______, C(KC_T), KC_V, _______, \
+        _______, _______, _______
     )
 };
-
-bool process_record_user(uint16_t keycode, keyrecord_t *record) {
-    switch (keycode) {
-        case QMKBEST:
-            if (record->event.pressed) {
-                // when keycode QMKBEST is pressed
-                SEND_STRING("QMK is the best thing ever!");
-            } else {
-                // when keycode QMKBEST is released
-            }
-            break;
-        case QMKURL:
-            if (record->event.pressed) {
-                // when keycode QMKURL is pressed
-                SEND_STRING("https://qmk.fm/\n");
-            } else {
-                // when keycode QMKURL is released
-            }
-            break;
-    }
-    return true;
-}
