@@ -15,33 +15,34 @@
  */
 #include QMK_KEYBOARD_H
 
+#include "analog.h"
+#include "qmk_midi.h"
+
 // Defines names for use in layer keycodes and the keymap
 enum layer_names {
     _BASE,
     _FN
 };
 
-// Defines the keycodes used by our macros in process_record_user
-enum custom_keycodes {
-    QMKBEST = SAFE_RANGE,
-    QMKURL
+enum control_change_keycodes {
+    MI_CC_1 = SAFE_RANGE,
+    MI_CC_2
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-        LT(1, XXXXXXX), \
-              KC_S, KC_D,       KC_G, KC_H, KC_J, \
-        KC_Z, KC_X, KC_C, KC_V, KC_B, KC_N, KC_M, \
-              KC_2, KC_3,       KC_5, KC_6, KC_7, \
-        KC_Q, KC_W, KC_E, KC_R, KC_T, KC_Y, KC_U \
+        LT(1, KC_SPACE), \
+               MI_Db, MI_Eb,        MI_Gb, MI_Ab, MI_Bb, \
+        MI_C , MI_D , MI_E , MI_F , MI_G , MI_A , MI_B , \
+               MI_Db_1, MI_Eb_1,     MI_Gb_1, MI_Ab_1, MI_Bb_1, \
+        MI_C_1, MI_D_1, MI_E_1, MI_F_1, MI_G_1, MI_A_1, MI_B_1 \
     ),
-
     [_FN] = LAYOUT(
-        _______, \
-                 _______, _______,          _______, _______, _______, \
-        _______, _______, _______, _______, _______, _______, _______, \
-                 _______, _______,          _______, _______, _______, \
-        _______, _______, _______, _______, _______, _______, _______
+        XXXXXXX, \
+               MI_Db_1, MI_Eb_1,     MI_Gb_1, MI_Ab_1, MI_Bb_1, \
+        MI_C_1, MI_D_1, MI_E_1, MI_F_1, MI_G_1, MI_A_1, MI_B_1, \
+               MI_Db_2, MI_Eb_2,     MI_Gb_2, MI_Ab_2, MI_Bb_2, \
+        MI_C_2, MI_D_2, MI_E_2, MI_F_2, MI_G_2, MI_A_2, MI_B_2
     )
 };

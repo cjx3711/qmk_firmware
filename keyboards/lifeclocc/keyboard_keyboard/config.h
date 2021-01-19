@@ -24,8 +24,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID   0x0000
 #define DEVICE_VER   0x0001
 #define MANUFACTURER CJX3711
-// #define PRODUCT      lifeclocc_keyboard_keyboard
-#define DESCRIPTION  Macropad for artists using photoshop
+#define PRODUCT      lifeclocc_keyboard_keyboard
+#define DESCRIPTION  A 2 octave mechnical midi keyboard
 
 /* key matrix size */
 #define MATRIX_ROWS 4
@@ -51,7 +51,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN D0  // or D1, D2, D3, E6
+// #define SOFT_SERIAL_PIN D0  // or D1, D2, D3, E6
 
 //#define BACKLIGHT_PIN B7
 //#define BACKLIGHT_LEVELS 3
@@ -134,9 +134,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //#define NO_PRINT
 
 /* disable action features */
-//#define NO_ACTION_LAYER
-//#define NO_ACTION_TAPPING
-//#define NO_ACTION_ONESHOT
+#define NO_ACTION_LAYER
+#define NO_ACTION_TAPPING
+#define NO_ACTION_ONESHOT
 
 /* disable these deprecated features by default */
 #define NO_ACTION_MACRO
@@ -145,3 +145,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
 //#define BOOTMAGIC_LITE_COLUMN 0
+
+/*
+ * MIDI options
+ */
+#define MIDI_BASIC
+#define MIDI_ADVANCED
+
+/* override number of MIDI tone keycodes (each octave adds 12 keycodes and allocates 12 bytes) */
+#define MIDI_TONE_KEYCODE_OCTAVES 4

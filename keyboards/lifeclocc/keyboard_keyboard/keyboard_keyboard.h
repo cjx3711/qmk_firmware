@@ -17,6 +17,7 @@
 #pragma once
 
 #include "quantum.h"
+#define xxx KC_NO
 
 /* This is a shortcut to help you visually see your layout.
  *
@@ -32,8 +33,8 @@
          k32, k33,      k35, k36, k37, \
     k41, k42, k43, k44, k45, k46, k47 \
 ) { \
-    { k11  , k12  , k13  , KC_NO, k15  , k16  , k17   }, \
+    { k11  , k12  , k13  , xxx  , k15  , k16  , k17   }, \
     { k21  , k22  , k23  , k24  , k25  , k26  , k27   }, \
-    { KC_NO, k32  , k33  , KC_NO, k35  , k36  , k37   }, \
+    { xxx  , k32  , k33  , xxx  , k35  , k36  , k37   }, \
     { k41  , k42  , k43  , k44  , k45  , k46  , k47   }  \
 }
