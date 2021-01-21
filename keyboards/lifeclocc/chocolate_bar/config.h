@@ -17,6 +17,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
+#include "config_common.h"
+
 /* USB Device descriptor parameter */
 #define VENDOR_ID       0xCB10
 #define PRODUCT_ID      0x1257
@@ -24,7 +26,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MANUFACTURER    Lifeclo.cc
 #define PRODUCT         Chocolate Bar
 #define DESCRIPTION     Split 40 percent ortho/staggered keyboard
-
 
 
 /* key matrix size */
@@ -46,8 +47,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Set 0 if debouncing isn't needed */
 #define DEBOUNCE 5
 
+#define CAPS_LOCK_LED_PIN D4
 /* serial.c configuration for split keyboard */
-#define SOFT_SERIAL_PIN D1
+#define SOFT_SERIAL_PIN D0
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
 #define LOCKING_SUPPORT_ENABLE
