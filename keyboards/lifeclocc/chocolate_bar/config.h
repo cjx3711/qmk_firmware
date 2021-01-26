@@ -52,19 +52,20 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define SOFT_SERIAL_PIN D0
 
 /* Mechanical locking support. Use KC_LCAP, KC_LNUM or KC_LSCR instead in keymap */
-#define LOCKING_SUPPORT_ENABLE
+// #define LOCKING_SUPPORT_ENABLE
 /* Locking resynchronize hack */
-#define LOCKING_RESYNC_ENABLE
+// #define LOCKING_RESYNC_ENABLE
 
+#define TAPPING_TERM 150
 
 // Mouse keys
 #define MK_COMBINED
 
 #define MOUSEKEY_DELAY              0    // Delay between pressing a movement key and cursor movement
 #define MOUSEKEY_INTERVAL           16   // 60hz Time between cursor movements
-#define MOUSEKEY_MAX_SPEED          2    // Maximum cursor speed at which acceleration stops
-#define MOUSEKEY_TIME_TO_MAX        5    // Time until maximum cursor speed is reached
+#define MOUSEKEY_MAX_SPEED          10   // Maximum cursor speed at which acceleration stops
+#define MOUSEKEY_TIME_TO_MAX        80   // Time until maximum cursor speed is reached
 #define MOUSEKEY_WHEEL_DELAY        0    // Delay between pressing a wheel key and wheel movement
-#define MOUSEKEY_WHEEL_INTERVAL     100  // Time between wheel movements
-#define MOUSEKEY_WHEEL_MAX_SPEED    8    // Maximum number of scroll steps per scroll action
-#define MOUSEKEY_WHEEL_TIME_TO_MAX  40   // Time until maximum scroll speed is reached
+#define MOUSEKEY_WHEEL_INTERVAL     50  // Time between wheel movements
+#define MOUSEKEY_WHEEL_MAX_SPEED    6    // Maximum number of scroll steps per scroll action
+#define MOUSEKEY_WHEEL_TIME_TO_MAX  100   // Time until maximum scroll speed is reached
