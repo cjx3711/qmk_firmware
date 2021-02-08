@@ -22,7 +22,7 @@
     { LA1, LA2, LA3, LA4, LA5, LA6, noo }, \
     { LB1, LB2, LB3, LB4, LB5, LB6, noo }, \
     { LC1, LC2, LC3, LC4, LC5, LC6, noo }, \
-    { LD1, noo, LD3, LD4, LD5, LD6, LD7 }, \
+    { LD1, LD2, LD3, LD4, LD5, LD6, LD7 }, \
     { noo, RA2, RA3, RA4, RA5, RA6, RA7 }, \
     { noo, RB2, RB3, RB4, RB5, RB6, RB7 }, \
     { noo, RC2, RC3, RC4, RC5, RC6, RC7 }, \
