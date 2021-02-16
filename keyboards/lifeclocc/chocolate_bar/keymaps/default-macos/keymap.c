@@ -40,8 +40,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
 
   [_RAISE] = LAYOUT(
-    KC_1 ,   KC_2 ,   KC_3 ,   KC_4 ,   KC_5 ,   KC_6 ,                       KC_7 ,   KC_8 ,   KC_9 ,   KC_0 , KC_MINS , KC_EQL , \
-    KC_EXLM ,   KC_AT ,   KC_HASH ,   KC_DLR ,   KC_PERC , KC_CIRC ,          KC_AMPR ,   KC_ASTR ,   KC_LPRN ,   KC_RPRN ,   KC_UNDS ,   KC_PLUS ,  \
+    KC_TILD ,   KC_1 ,   KC_2 ,   KC_3 ,   KC_4 ,   KC_5 ,                       KC_6 ,   KC_7 ,   KC_8 ,   KC_9 , KC_0 , KC_EQL , \
+    ____,    KC_EXLM ,   KC_AT ,   KC_HASH ,   KC_DLR ,   KC_PERC ,             KC_CIRC, KC_AMPR,   KC_ASTR,   KC_LPRN,   KC_RPRN, KC_PLUS ,  \
     KC_MINS ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ ,                    ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   KC_PLUS ,  \
     KC_UNDS ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ , KC_MINS ,   KC_DEL , ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   KC_EQL 
   ),
@@ -61,6 +61,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ ,                 KC_WH_U ,   KC_WH_R ,   KC_MS_U ,   KC_WH_L ,   ____ ,   ____ , \
     ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ ,                 KC_WH_D ,   KC_MS_L ,   KC_MS_D ,   KC_MS_R ,   ____ ,   ____ ,  \
     ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ ,                 KC_BTN4 ,   KC_BTN5 ,   ____ ,   ____ ,   ____ ,   ____ ,  \
-    ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   KC_ACL0 , KC_ACL2 ,   KC_BTN1 , KC_BTN2 ,   KC_BTN3 ,   ____ ,   ____ ,   ____ ,   ____ 
+    ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   KC_ACL0 , KC_ACL2 ,   KC_BTN1 , KC_BTN2,  KC_BTN3 ,   ____ ,   ____ ,   ____ ,   ____ 
   ),
 };
