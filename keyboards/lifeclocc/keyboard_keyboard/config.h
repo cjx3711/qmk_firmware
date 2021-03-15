@@ -24,7 +24,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define PRODUCT_ID   0x0000
 #define DEVICE_VER   0x0001
 #define MANUFACTURER CJX3711
-#define PRODUCT      lifeclocc_keyboard_keyboard
+#define PRODUCT      Lifeclocc Keyboard Keyboard
 #define DESCRIPTION  A 2 octave mechnical midi keyboard
 
 /* key matrix size */
