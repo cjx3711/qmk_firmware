@@ -32,20 +32,20 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_UPPER] = LAYOUT(
-        C(KC_C), KC_RBRC, C(KC_J), KC_E, KC_B, \
-        C(KC_V), KC_LBRC, LALT_T(KC_X), C(KC_D), C(KC_Z), \
-        LCTL_T(KC_ESC), LT(1, KC_BSPC), LT(_LOWER, KC_V), KC_SPC
+        C(KC_C), KC_RBRC, C(KC_J), C(KC_Z), KC_B, \
+        C(KC_V), KC_LBRC, LALT_T(KC_X), C(KC_D), KC_E, \
+        LCTL_T(KC_ESC), LT(_LOWER, KC_BSPC), LT(_MID, KC_V), KC_SPC
     ),
 
     [_MID] = LAYOUT(
-        C(KC_X), S(KC_RBRC), C(KC_G), KC_L, KC_P, \
-        _______, S(KC_LBRC), KC_D, KC_G, C(S(KC_Z)), \
-        _______, xxx, C(KC_S), KC_R
+        C(KC_X), S(KC_RBRC), C(KC_G), C(S(KC_Z)), KC_P, \
+        _______, S(KC_LBRC), KC_D, KC_G, KC_L, \
+        KC_LSHIFT, C(KC_S), xxx, C(KC_SPC)
     ),
 
     [_LOWER] = LAYOUT(
         KC_1, KC_2, KC_3, KC_4, KC_5, \
         KC_6, KC_7, KC_8, KC_9, KC_0, \
-        KC_LSHIFT, KC_LALT, xxx, C(KC_SPC)
+        KC_LSHIFT, xxx, KC_LALT, KC_R
     )
 };

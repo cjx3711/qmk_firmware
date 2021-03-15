@@ -35,19 +35,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_TAB,  KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS, \
     LT(_MOUSE, KC_ESC), KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                  KC_H,    KC_J,    KC_K,    KC_L,    KC_QUOT, KC_ENT, \
     KC_LSPO, KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSPC, \
-    CTL_T(KC_LBRC), LT(_FN, ____), KC_LALT, KC_LGUI, LT(_RAISE, ____) , LT(_LOWER, KC_ENT) , KC_SPC, \
+    CTL_T(KC_LBRC), LT(_FN, ____), LT(_RAISE, ____) , KC_LALT, LGUI_T(KC_ENT), LT(_LOWER, KC_ENT), KC_SPC, \
     LT(_LOWER, KC_BSPC), LT(_RAISE, KC_DEL), A(KC_BSPC), KC_RGUI, KC_RALT, LT(_FN, ____), RCTL_T(KC_RBRC)
   ),
 
   [_RAISE] = LAYOUT(
-    KC_TILD ,   KC_1 ,   KC_2 ,   KC_3 ,   KC_4 ,   KC_5 ,                       KC_6 ,   KC_7 ,   KC_8 ,   KC_9 , KC_0 , KC_EQL , \
-    ____,    KC_EXLM ,   KC_AT ,   KC_HASH ,   KC_DLR ,   KC_PERC ,             KC_CIRC, KC_AMPR,   KC_ASTR,   KC_LPRN,   KC_RPRN, KC_PLUS ,  \
+    KC_GRV ,   KC_1 ,   KC_2 ,   KC_3 ,   KC_4 ,   KC_5 ,                       KC_6 ,   KC_7 ,   KC_8 ,   KC_9 , KC_0 , KC_EQL , \
+    KC_TILD,    KC_EXLM ,   KC_AT ,   KC_HASH ,   KC_DLR ,   KC_PERC ,             KC_CIRC, KC_AMPR,   KC_ASTR,   KC_LPRN,   KC_RPRN, KC_PLUS ,  \
     KC_MINS ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ ,                    ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   KC_PLUS ,  \
     KC_UNDS ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ , KC_MINS ,   KC_DEL , ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   KC_EQL 
   ),
   [_LOWER] = LAYOUT(
-    KC_GRV ,   ____ , G(KC_W) , C(S(KC_TAB)) , C(KC_TAB) , G(KC_T) ,         KC_PGUP ,   KC_HOME ,   KC_UP ,   KC_END ,   ____ ,   ____ , \
-    KC_TILD ,   ____ , C(KC_LEFT) , C(KC_UP) , C(KC_RIGHT) , G(S(KC_T)) ,                 KC_PGDN ,   KC_LEFT ,   KC_DOWN ,   KC_RIGHT ,   ____ ,   ____ ,  \
+    ____ ,   ____ , G(KC_W) , C(S(KC_TAB)) , C(KC_TAB) , G(KC_T) ,         KC_PGUP ,   KC_HOME ,   KC_UP ,   KC_END ,   ____ ,   ____ , \
+    ____ ,   ____ , C(KC_LEFT) , C(KC_UP) , C(KC_RIGHT) , G(S(KC_T)) ,                 KC_PGDN ,   KC_LEFT ,   KC_DOWN ,   KC_RIGHT ,   ____ ,   ____ ,  \
     KC_SCLN ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ ,                 ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   KC_COLN ,  \
     KC_QUOT ,   ____ ,   ____ ,   ____ ,   ____ ,   ____ , KC_UNDS ,   KC_DEL , ____ ,   ____ ,   ____ ,   ____ ,   ____ ,   KC_DQT 
   ),

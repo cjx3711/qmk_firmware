@@ -26,15 +26,18 @@
  *
  * The second converts the arguments into a two-dimensional array which
  * represents the switch matrix.
+ *
+ * Row 1, Function Keys
+ * Row 2, Black Keys
+ * Row 3, White Keys
  */
 #define LAYOUT( \
-    k11, k12, k13,      k15, k16, k17, \
-    k21, k22, k23, k24, k25, k26, k27, \
-         k32, k33,      k35, k36, k37, \
-    k41, k42, k43, k44, k45, k46, k47 \
+    k11, k14, k31, k34, \
+         k12, k13,      k15, k16, k17,      k32, k33,      k35, k36, k37, \
+    k21, k22, k23, k24, k25, k26, k27, k41, k42, k43, k44, k45, k46, k47  \
 ) { \
-    { k11  , k12  , k13  , xxx  , k15  , k16  , k17   }, \
+    { k11  , k12  , k13  , k14  , k15  , k16  , k17   }, \
     { k21  , k22  , k23  , k24  , k25  , k26  , k27   }, \
-    { xxx  , k32  , k33  , xxx  , k35  , k36  , k37   }, \
+    { k31  , k32  , k33  , k34  , k35  , k36  , k37   }, \
     { k41  , k42  , k43  , k44  , k45  , k46  , k47   }  \
 }
