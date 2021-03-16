@@ -22,6 +22,7 @@ enum layer_names {
     _FLIP,
     _LOWER,
     _RAISE,
+    _MOUSE
 };
 
 // Defines the keycodes used by our macros in process_record_user
@@ -33,39 +34,48 @@ enum custom_keycodes {
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Base */
     [_BASE] = LAYOUT(
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx,   xxx,   xxx, \
-                                 xxx, xxx, \
-                            xxx, xxx, xxx  \
+      KC_GRV,             KC_1,    KC_2,    KC_3,    KC_4,    KC_5,   KC_EQL, \
+      KC_TAB,             KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,   KC_ENT, \
+      LT(_MOUSE, KC_ESC), KC_A,    KC_S,    KC_D,    KC_F,    KC_G,   KC_SCLN, \
+      KC_LSFT,            KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,
+      KC_LCTL,      KC_LOPT,      KC_LGUI, \
+                                        KC_BSPC, KC_SPC, \
+                                        LT(_LOWER, KC_LBRC), LT(_RAISE, KC_RBRC), LT(_FLIP, xxx)  \
     ),
     [_FLIP] = LAYOUT(
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, \
+      xxx,    KC_6,    KC_7,    KC_8,    KC_9,     KC_0,     KC_BSLS, \
+      xxx,    KC_Y,    KC_U,    KC_I,    KC_O,     KC_P,     xxx, \
+      xxx,    KC_H,    KC_J,    KC_K,    KC_L,     KC_QUOT,  xxx, \
+      xxx,    KC_N,    KC_M,    KC_COMM, KC_DOT,   KC_SLSH, \
       xxx,   xxx,   xxx, \
-                                 xxx, xxx, \
-                            xxx, xxx, xxx  \
+                                    KC_DEL , xxx, \
+                            S(KC_9), S(KC_0), xxx  \
     ),
     [_LOWER] = LAYOUT(
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx,   xxx,   xxx, \
-                                 xxx, xxx, \
-                            xxx, xxx, xxx  \
+      KC_CLCK, KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12, \
+      xxx,     KC_HOME,  KC_UP,    KC_END,   KC_PGUP,  xxx,     S(KC_QUOT), \
+      KC_VOLU, KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_PGDN,  xxx,     S(KC_SLSH), \
+      KC_VOLD, xxx,      xxx,      xxx,      xxx,      xxx, \
+      KC_MPLY,   xxx,    xxx, \
+                                            A(KC_BSPC), KC_UNDS, \
+                                        xxx, xxx, xxx  \
     ),
     [_RAISE] = LAYOUT(
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx, xxx, xxx, xxx, xxx, xxx, \
-      xxx,   xxx,   xxx, \
-                                 xxx, xxx, \
-                            xxx, xxx, xxx  \
+      RESET,   KC_F1,   KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6, \
+      xxx,    S(KC_1),  S(KC_2),  S(KC_3),  S(KC_4),  S(KC_5),  S(KC_BSLS),  \
+      xxx,    S(KC_6),  S(KC_7),  S(KC_8),  S(KC_9),  S(KC_0),  KC_BSLS,  \
+      xxx,    xxx,    xxx,    xxx,    xxx,     xxx,  \
+      xxx,    xxx,    xxx,  \
+                                 xxx,  KC_MINS,  \
+                            xxx,  xxx,  xxx  \
+    ), 
+    [_MOUSE] = LAYOUT(
+      xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     \
+      xxx,     KC_WH_L, KC_MS_U, KC_WH_R, KC_WH_U, xxx,     xxx,     \
+      xxx,     KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, xxx,     xxx,     \
+      xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     \
+      xxx,       KC_BTN4,   KC_BTN5, \
+                                                KC_ACL0, KC_ACL2, \
+                                            KC_BTN3, KC_BTN2, KC_BTN1  \
     ),
 };

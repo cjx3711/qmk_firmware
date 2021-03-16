@@ -145,3 +145,18 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Bootmagic Lite key configuration */
 //#define BOOTMAGIC_LITE_ROW 0
 //#define BOOTMAGIC_LITE_COLUMN 0
+
+
+#define TAPPING_TERM 150
+
+// Mouse keys
+#define MK_COMBINED
+
+#define MOUSEKEY_DELAY              0    // Delay between pressing a movement key and cursor movement
+#define MOUSEKEY_INTERVAL           16   // 60hz Time between cursor movements
+#define MOUSEKEY_MAX_SPEED          10   // Maximum cursor speed at which acceleration stops
+#define MOUSEKEY_TIME_TO_MAX        80   // Time until maximum cursor speed is reached
+#define MOUSEKEY_WHEEL_DELAY        0    // Delay between pressing a wheel key and wheel movement
+#define MOUSEKEY_WHEEL_INTERVAL     50  // Time between wheel movements
+#define MOUSEKEY_WHEEL_MAX_SPEED    6    // Maximum number of scroll steps per scroll action
+#define MOUSEKEY_WHEEL_TIME_TO_MAX  100   // Time until maximum scroll speed is reached
