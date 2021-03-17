@@ -40,8 +40,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       LT(_MOUSE, KC_ESC), KC_A,    KC_S,    KC_D,    KC_F,    KC_G,   KC_SCLN, \
       KC_LSFT,            KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,
       KC_LCTL,      KC_LOPT,      KC_LGUI, \
-                                        KC_BSPC, KC_SPC, \
-                                        LT(_RAISE, KC_LBRC), LT(_LOWER, KC_RBRC), LT(_FLIP, KC_SPC)  \
+                                                    S(KC_9), S(KC_0), \
+                                        LT(_RAISE, KC_DEL), LT(_LOWER, KC_BSPC), LT(_FLIP, KC_SPC)  \
     ),
     [_FLIP] = LAYOUT(
       ___,    KC_6,    KC_7,    KC_8,    KC_9,     KC_0,     KC_BSLS, \
@@ -49,8 +49,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       ___,    KC_H,    KC_J,    KC_K,    KC_L,     KC_QUOT,  S(KC_SLSH), \
       ___,    KC_N,    KC_M,    KC_COMM, KC_DOT,   KC_SLSH, \
       ___,   ___,   ___, \
-                                    KC_DEL , ___, \
-                            S(KC_9), S(KC_0), ___  \
+                                                  KC_LBRC , KC_RBRC, \
+                                          A(KC_DEL), A(KC_BSPC), xxx  \
     ),
     [_LOWER] = LAYOUT(
       KC_CLCK, KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,  KC_F12, \
@@ -58,8 +58,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       KC_VOLU, KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_PGDN,  ___,     S(KC_SCLN), \
       KC_VOLD, ___,      ___,      ___,      ___,      ___, \
       KC_MPLY,   ___,    ___, \
-                                            A(KC_BSPC), KC_UNDS, \
-                                        ___, ___, ___  \
+                                                S(KC_LBRC), S(KC_RBRC), \
+                                          KC_ENT, xxx, KC_UNDS  \
     ),
     [_RAISE] = LAYOUT(
       RESET,    KC_F1,   KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6, \
@@ -67,8 +67,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       ___,     S(KC_6),  S(KC_7),  S(KC_8),  S(KC_9),  S(KC_0),  KC_BSLS,  \
       CK_TOGG, ___,    ___,    ___,    ___,     ___,  \
       AU_TOG,  ___,    ___,  \
-                                            ___,  KC_MINS,  \
-                                        ___,  ___,  ___  \
+                                                 ___,  ___,  \
+                                        xxx,  KC_SPC,  KC_MINS  \
     ), 
     [_MOUSE] = LAYOUT(
       xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     \
