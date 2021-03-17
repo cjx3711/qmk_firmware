@@ -15,3 +15,38 @@
  */
 
 #include "lazy_choco.h"
+
+void keyboard_pre_init_user(void) {
+  // Call the keyboard pre init code.
+  // Set our LED pins as output
+  setPinOutput(F4); // Caps
+  setPinOutput(D2); // Flip
+  setPinOutput(D1); // Raise 
+  setPinOutput(D0); // Lower
+}
+
+bool led_update_kb(led_t led_state) {
+    bool res = led_update_user(led_state);
+    if(res) {
+        writePin(F4, led_state.caps_lock);
+    }
+    return res;
+}
+
+layer_state_t layer_state_set_kb(layer_state_t state) {
+    writePinLow(D0);
+    writePinLow(D1);
+    writePinLow(D2);
+    switch (get_highest_layer(state)) {
+      case 1:
+        writePinHigh(D2);
+        break;
+      case 2:
+        writePinHigh(D0);
+        break;
+      case 3:
+        writePinHigh(D1);
+        break;
+      }
+    return layer_state_set_user(state);
+}

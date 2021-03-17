@@ -45,10 +45,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MATRIX_COL_PINS { F5, F6, F7, B1, B3, B2, B6  }
 #define UNUSED_PINS
 
-#define C6_AUDIO
+#define AUDIO_PIN C6
 #define AUDIO_CLICKY
 
-#define LED_CAPS_LOCK_PIN D1
+#define LED_CAPS_LOCK_PIN F4
 
 /* COL2ROW, ROW2COL */
 #define DIODE_DIRECTION COL2ROW
@@ -155,7 +155,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 150
 
 // Mouse keys
-#define MK_COMBINED
 
 #define MOUSEKEY_DELAY              0    // Delay between pressing a movement key and cursor movement
 #define MOUSEKEY_INTERVAL           16   // 60hz Time between cursor movements

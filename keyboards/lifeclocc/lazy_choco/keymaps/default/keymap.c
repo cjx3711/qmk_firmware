@@ -62,16 +62,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         ___, ___, ___  \
     ),
     [_RAISE] = LAYOUT(
-      RESET,   KC_F1,   KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6, \
-      ___,    S(KC_1),  S(KC_2),  S(KC_3),  S(KC_4),  S(KC_5),  S(KC_BSLS),  \
-      ___,    S(KC_6),  S(KC_7),  S(KC_8),  S(KC_9),  S(KC_0),  KC_BSLS,  \
-      ___,    ___,    ___,    ___,    ___,     ___,  \
-      ___,    ___,    ___,  \
-                                 ___,  KC_MINS,  \
-                            ___,  ___,  ___  \
+      RESET,    KC_F1,   KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6, \
+      ___,     S(KC_1),  S(KC_2),  S(KC_3),  S(KC_4),  S(KC_5),  S(KC_BSLS),  \
+      ___,     S(KC_6),  S(KC_7),  S(KC_8),  S(KC_9),  S(KC_0),  KC_BSLS,  \
+      CK_TOGG, ___,    ___,    ___,    ___,     ___,  \
+      AU_TOG,  ___,    ___,  \
+                                            ___,  KC_MINS,  \
+                                        ___,  ___,  ___  \
     ), 
     [_MOUSE] = LAYOUT(
-      AU_ON,   xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     \
+      xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     \
       xxx,     KC_WH_L, KC_MS_U, KC_WH_R, KC_WH_U, xxx,     xxx,     \
       xxx,     KC_MS_L, KC_MS_D, KC_MS_R, KC_WH_D, xxx,     xxx,     \
       xxx,     xxx,     xxx,     xxx,     xxx,     xxx,     \
