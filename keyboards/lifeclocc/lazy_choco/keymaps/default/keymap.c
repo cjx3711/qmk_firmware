@@ -45,17 +45,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_FLIP] = LAYOUT(
       ___,    KC_6,    KC_7,    KC_8,    KC_9,     KC_0,     KC_BSLS, \
-      ___,    KC_Y,    KC_U,    KC_I,    KC_O,     KC_P,     ___, \
-      ___,    KC_H,    KC_J,    KC_K,    KC_L,     KC_QUOT,  ___, \
+      ___,    KC_Y,    KC_U,    KC_I,    KC_O,     KC_P,     S(KC_QUOT), \
+      ___,    KC_H,    KC_J,    KC_K,    KC_L,     KC_QUOT,  S(KC_SLSH), \
       ___,    KC_N,    KC_M,    KC_COMM, KC_DOT,   KC_SLSH, \
       ___,   ___,   ___, \
                                     KC_DEL , ___, \
                             S(KC_9), S(KC_0), ___  \
     ),
     [_LOWER] = LAYOUT(
-      KC_CLCK, KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,   KC_F12, \
-      ___,     KC_HOME,  KC_UP,    KC_END,   KC_PGUP,  ___,     S(KC_QUOT), \
-      KC_VOLU, KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_PGDN,  ___,     S(KC_SLSH), \
+      KC_CLCK, KC_F7,    KC_F8,    KC_F9,    KC_F10,   KC_F11,  KC_F12, \
+      ___,     KC_HOME,  KC_UP,    KC_END,   KC_PGUP,  ___,     ___, \
+      KC_VOLU, KC_LEFT,  KC_DOWN,  KC_RGHT,  KC_PGDN,  ___,     S(KC_SCLN), \
       KC_VOLD, ___,      ___,      ___,      ___,      ___, \
       KC_MPLY,   ___,    ___, \
                                             A(KC_BSPC), KC_UNDS, \
