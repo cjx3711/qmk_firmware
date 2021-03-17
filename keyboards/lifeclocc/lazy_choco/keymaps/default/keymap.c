@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         LT(_RAISE, KC_DEL), LT(_LOWER, KC_BSPC), LT(_FLIP, KC_SPC)  \
     ),
     [_FLIP] = LAYOUT(
-      ___,    KC_6,    KC_7,    KC_8,    KC_9,     KC_0,     KC_BSLS, \
+      ___,    KC_6,    KC_7,    KC_8,    KC_9,     KC_0,     S(KC_EQL), \
       ___,    KC_Y,    KC_U,    KC_I,    KC_O,     KC_P,     S(KC_QUOT), \
       ___,    KC_H,    KC_J,    KC_K,    KC_L,     KC_QUOT,  S(KC_SLSH), \
       ___,    KC_N,    KC_M,    KC_COMM, KC_DOT,   KC_SLSH, \
