@@ -59,7 +59,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define TAPPING_TERM 150
 
 // Mouse keys
-#define MK_COMBINED
+// #define MK_COMBINED
 
 #define MOUSEKEY_DELAY              0    // Delay between pressing a movement key and cursor movement
 #define MOUSEKEY_INTERVAL           16   // 60hz Time between cursor movements

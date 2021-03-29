@@ -1,1 +1,1 @@
-# The default keymap for the Lifeclo.cc chocolate bar
+# Code oriented keymap for the Lifeclo.cc chocolate bar, mac edition.
