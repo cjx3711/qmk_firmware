@@ -33,11 +33,11 @@ enum custom_keycodes {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [_BASE] = LAYOUT(
-    KC_TAB,             KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSLS, \
+    KC_TAB,             KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,                  KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_BSPC, \
     LT(_MOUSE, KC_ESC), KC_A,    KC_S,    KC_D,    KC_F,    KC_G,                  KC_H,    KC_J,    KC_K,    KC_L,    KC_QUOT, KC_ENT, \
     KC_LSFT,            KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,                  KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH, KC_RSFT, \
     KC_LCTL, LT(_FN, KC_APP), KC_LGUI, KC_LALT, LT(_LOWER, ___) , LT(_RAISE, KC_ENT), KC_SPC, \
-                                    LT(_LOWER, KC_BSPC), LT(_RAISE, KC_DEL), A(KC_BSPC), KC_RALT, KC_RGUI, LT(_FN, KC_APP), KC_RCTL
+                                    LT(_LOWER, KC_BSPC), LT(_RAISE, KC_DEL), C(KC_BSPC), KC_RALT, KC_RGUI, LT(_FN, KC_APP), KC_RCTL
   ),
 
   [_RAISE] = LAYOUT(
@@ -48,7 +48,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   ),
   [_LOWER] = LAYOUT(
     ___ ,     ___ , C(KC_W) , C(S(KC_TAB)) , C(KC_TAB) , C(KC_T) ,              KC_PGUP ,   KC_HOME ,   KC_UP ,   KC_END ,   ___ ,   ___ , \
-    KC_CAPS,  ___ , G(S(KC_LEFT)) , G(KC_TAB) , G(S(KC_RIGHT)), C(S(KC_T)) ,    KC_PGDN ,   KC_LEFT ,   KC_DOWN , KC_RIGHT ,   ___ ,   ___ ,  \
+    KC_CAPS,  ___ , C(G(KC_LEFT)) , G(KC_TAB) , C(G(KC_RIGHT)), C(S(KC_T)) ,    KC_PGDN ,   KC_LEFT ,   KC_DOWN , KC_RIGHT ,   ___ ,   ___ ,  \
     ___ ,     ___ ,   ___ ,   ___ ,   ___ ,   ___ ,                             ___ ,   ___ ,   ___ ,   ___ ,   ___ ,   ___ ,  \
     ___ ,     ___ ,   ___ ,   ___ ,   ___ ,   ___ , KC_UNDS ,           KC_DEL , ___ ,   ___ ,   ___ ,   ___ ,   ___ ,   ___ 
   ),
