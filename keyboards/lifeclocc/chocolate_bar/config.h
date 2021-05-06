@@ -41,6 +41,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define SPLIT_HAND_PIN F4
 
+#define AUDIO_PIN C6
+#define AUDIO_CLICKY
+
 
 #define DIODE_DIRECTION COL2ROW
 
